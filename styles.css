@@ -1,0 +1,153 @@
+@import url('https:fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Header Styles */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+  }
+
+  header .logo
+   {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   }
+  
+  header ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+  }
+  
+  header ul li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+  } 
+
+  header ul li a:hover {
+    background: #fff;
+    color:#333;
+  }
+  
+  /* Stream Container Styles */
+  .stream-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    transform: translateY(90px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stream-player {
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    /* Add stream player styles here */
+  }
+  
+  /* Search Container Styles */
+  .search-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    transform: translateY(60px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input[type="search"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-container button {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-results {
+    /* Add search results styles here */
+  }
+  
+  /*Videos Container Styles*/
+   .videos-body {
+    position: center;
+    margin: 40px auto;
+    padding: 20px;
+    transform: translateY(70px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+  /* Footer Styles */
+  .footer {
+    position: fixed;
+    left: 0px;
+    bottom:0px;
+    height: 30px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+  }
+  
+  .footer-container {
+    max-width: 800px;
+    text-align: center;
+    transform: translateY(-10px);
+     margin: 0 auto;
+  }
+  
