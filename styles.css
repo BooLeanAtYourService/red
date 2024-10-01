@@ -1,4 +1,4 @@
-@import url('https:fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('(https:fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap)');
 
 /* Global Styles */
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
 }
 
@@ -18,7 +18,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 30px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@ header .logo {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -56,34 +56,6 @@ header ul li a {
 header ul li a:hover {
   background: #fff;
   color: #333;
-}
-
-/* Mobile Header Styles */
-@media only screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 10px;
-  }
-  
-  header ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  header ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  
-  header ul li a {
-    padding: 10px;
-    font-size: 1.2em;
-  }
-  
-  header .logo {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
 }
 
 /* Stream Container Styles */
@@ -179,28 +151,49 @@ header ul li a:hover {
 }
 
 /* Responsive Design */
-
 /* Mobile Devices (480px and below) */
 @media only screen and (max-width: 480px) {
-  header {
-    flex-direction: column;
-    padding: 10px;
-  }
-  
-  header ul {
-    flex-direction: column;
-  }
-  
-  header ul li {
-    margin-right: 0;
-  }
-  
-  .stream-container, .search-container, .videos-body {
+  .stream-container, 
+  .search-container, 
+  .videos-body {
     margin: 10px auto;
     padding: 10px;
     transform: translateY(30px);
   }
   
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Additional styles for mobile devices */
+  body {
+    font-size: 14px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Tablets and Small Laptops (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 25px 75px;
+  } 
+}
   .footer {
     height: 50px;
   }
