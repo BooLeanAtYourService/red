@@ -20,6 +20,7 @@ header {
   width: 100%;
   padding: 30px 100px;
   display: flex;
+  flexwrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
@@ -150,56 +151,3 @@ header ul li a:hover {
   margin: 0 auto;
 }
 
-/* Responsive Design */
-/* Mobile Devices (480px and below) */
-@media only screen and (max-width: 480px) {
-  .stream-container, 
-  .search-container, 
-  .videos-body {
-    margin: 10px auto;
-    padding: 10px;
-    transform: translateY(30px);
-  }
-  
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  /* Additional styles for mobile devices */
-  body {
-    font-size: 14px;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .nav-links {
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-
-/* Tablets and Small Laptops (481px to 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    padding: 25px 75px;
-  } 
-}
-  .footer {
-    height: 50px;
-  }
-}
-
-/* Tablets and Small Laptops (481px to 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    padding: 25px 75px;
