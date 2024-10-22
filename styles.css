@@ -20,7 +20,6 @@ header {
   width: 100%;
   padding: 30px 100px;
   display: flex;
-  object-fit: cover;
   flexwrap: wrap;
   justify-content: space-between;
   align-items: center;
